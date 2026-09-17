@@ -87,7 +87,7 @@ export function ProjectCard({ project, compact = false }: ProjectCardProps) {
           )}
         </div>
       </CardContent>
-      <CardFooter className="flex gap-3 pt-4 border-t border-border/50 bg-muted/10">
+      <CardFooter className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-border/50 bg-muted/10">
         <Link href={`/projects/${project.id}`} className={buttonVariants({ variant: "default", size: "sm" }) + " w-full sm:w-auto"}>
           View Details
           <ArrowRight className="ml-2 h-4 w-4" />

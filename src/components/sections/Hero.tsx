@@ -39,16 +39,16 @@ export function Hero() {
             </motion.p>
             
             <motion.div 
-              className="flex flex-wrap gap-4 pt-4"
+              className="flex flex-col sm:flex-row gap-4 pt-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Link href="#projects" className={buttonVariants({ size: "lg" }) + " h-12 px-8"}>
+              <Link href="#projects" className={buttonVariants({ size: "lg" }) + " h-12 px-8 w-full sm:w-auto"}>
                 View Projects
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-              <a href="/Chetan_Kharade_AI_ML_Engineer_Resume.pdf" target="_blank" rel="noopener noreferrer" className={buttonVariants({ variant: "outline", size: "lg" }) + " h-12 px-8 bg-background/50 backdrop-blur-sm"}>
+              <a href="/Chetan_Kharade_AI_ML_Engineer_Resume.pdf" target="_blank" rel="noopener noreferrer" className={buttonVariants({ variant: "outline", size: "lg" }) + " h-12 px-8 bg-background/50 backdrop-blur-sm w-full sm:w-auto"}>
                 View Resume
               </a>
             </motion.div>

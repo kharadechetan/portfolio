@@ -54,15 +54,15 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
               {project.subtitle}
             </h2>
             
-            <div className="flex flex-wrap gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               {project.github && (
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className={buttonVariants({ variant: "outline" })}>
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className={buttonVariants({ variant: "outline" }) + " w-full sm:w-auto"}>
                   <Github className="mr-2 h-4 w-4" />
                   View Source
                 </a>
               )}
               {project.demo && (
-                <a href={project.demo} target="_blank" rel="noopener noreferrer" className={buttonVariants()}>
+                <a href={project.demo} target="_blank" rel="noopener noreferrer" className={buttonVariants() + " w-full sm:w-auto"}>
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Live Demo
                 </a>

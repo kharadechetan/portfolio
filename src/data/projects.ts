@@ -291,7 +291,7 @@ export const projectsData: Project[] = [
     ],
     capabilities: [],
     technologies: ["Python", "Scikit-learn"],
-    github: "https://github.com/Chetankharade/Recommendation-system",
+    github: "https://github.com/kharadechetan/Recommendation-system",
     featured: false,
   },
   {
@@ -306,7 +306,7 @@ export const projectsData: Project[] = [
     ],
     capabilities: [],
     technologies: ["Python"],
-    github: "https://github.com/Chetankharade/APS-System",
+    github: "https://github.com/kharadechetan/APS-System",
     featured: false,
   },
 ];

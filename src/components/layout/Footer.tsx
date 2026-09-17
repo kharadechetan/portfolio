@@ -23,10 +23,10 @@ export function Footer() {
               <Mail className="h-5 w-5" />
             </a>
             {/* Note: User specified no fake links, but we can assume GitHub is related to the projects provided. I will use a placeholder href "#" or omit if not provided. Since I don't have his exact GH profile (just project links), I'll extract it. 
-                Project GH links: https://github.com/Chetankharade/... so profile is likely https://github.com/Chetankharade 
+                Project GH links: https://github.com/kharadechetan/... so profile is likely https://github.com/kharadechetan 
             */}
             <a
-              href="https://github.com/Chetankharade"
+              href="https://github.com/kharadechetan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
