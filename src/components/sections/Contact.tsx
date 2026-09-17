@@ -10,7 +10,7 @@ export function Contact() {
           Have an AI system to build?
         </h2>
         <p className="text-xl text-muted-foreground mb-10">
-          Let's talk.
+          Let&apos;s talk.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
