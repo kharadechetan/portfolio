@@ -31,7 +31,7 @@ export const resumeData = {
     },
     {
       role: "Data Scientist",
-      company: "Learnbay",
+      company: "Learnbay (intern)",
       location: "Pune, India",
       duration: "August 2023 – August 2024",
       responsibilities: [
