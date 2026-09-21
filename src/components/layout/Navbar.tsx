@@ -8,11 +8,11 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 
 const navLinks = [
-  { name: "About", href: "#about", icon: User },
-  { name: "Expertise", href: "#expertise", icon: Star },
-  { name: "Projects", href: "#projects", icon: Code },
-  { name: "Experience", href: "#experience", icon: Briefcase },
-  { name: "Contact", href: "#contact", icon: Mail },
+  { name: "About", href: "/#about", icon: User },
+  { name: "Expertise", href: "/#expertise", icon: Star },
+  { name: "Projects", href: "/#projects", icon: Code },
+  { name: "Experience", href: "/#experience", icon: Briefcase },
+  { name: "Contact", href: "/#contact", icon: Mail },
 ];
 
 function ThemeToggle() {
