@@ -16,8 +16,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { id: string } }) {
-  const project = projectsData.find((p) => p.id === params.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const project = projectsData.find((p) => p.id === id);
   if (!project) return { title: "Project Not Found" };
   
   return {
@@ -26,8 +27,9 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 
-export default function ProjectDetail({ params }: { params: { id: string } }) {
-  const project = projectsData.find((p) => p.id === params.id);
+export default async function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const project = projectsData.find((p) => p.id === id);
 
   if (!project) {
     notFound();

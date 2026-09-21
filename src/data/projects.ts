@@ -73,6 +73,10 @@ export const projectsData: Project[] = [
     subtitle: "AI Agent Plumbing Assistant",
     description:
       "A conversational AI agent designed for plumbing troubleshooting with document-grounded responses and real-time voice interaction capabilities.",
+    problem:
+      "Plumbing emergencies require immediate, accurate troubleshooting, but professional help is often delayed and existing generic AI chatbots lack domain-specific grounding and real-time voice interaction.",
+    solution:
+      "Developed a specialized AI agent using LangChain and LiveKit that leverages RAG on plumbing manuals to provide real-time, voice-based conversational troubleshooting with safety-first escalation protocols.",
     capabilities: [
       "LangChain",
       "LangGraph",
@@ -119,6 +123,10 @@ export const projectsData: Project[] = [
     subtitle: "Multi-Agent LLM Application",
     description:
       "A multi-agent LLM application utilizing dynamic assistant routing, session-based state management, and robust tool calling.",
+    problem:
+      "Handling complex user queries across diverse domains requires specialized knowledge, but a single monolithic LLM prompt often loses context, hallucinates, or fails to execute domain-specific tools effectively.",
+    solution:
+      "Implemented a multi-agent architecture using OpenAI Assistants where a primary router dynamically delegates tasks to specialized sub-agents, maintaining seamless session state and streaming responses to the user.",
     capabilities: [
       "Multi-agent LLM application",
       "Dynamic assistant routing",
@@ -153,6 +161,10 @@ export const projectsData: Project[] = [
     subtitle: "Production RSS News Aggregation & Search Platform",
     description:
       "A highly scalable production RSS news aggregation platform processing feeds from major Indian publishers with advanced cross-lingual search capabilities.",
+    problem:
+      "Aggregating news from multiple regional publishers involves dealing with inconsistent feed formats, duplicate articles, and language barriers, making unified search across English and Hindi highly inefficient.",
+    solution:
+      "Built a robust asynchronous pipeline using FastAPI and PostgreSQL with multi-pass deduplication, custom AST-based boolean search, and cross-lingual English-Hindi search capabilities to process over 200+ feeds reliably.",
     metrics: [
       "7 Indian publishers",
       "207+ RSS feeds for Indian Express",
@@ -197,6 +209,10 @@ export const projectsData: Project[] = [
     subtitle: "Cloud-Based AI Image Enhancement System",
     description:
       "A cloud-based AI system for processing, enhancing, and upscaling a wide variety of image formats using specialized neural networks.",
+    problem:
+      "Professional image enhancement and super-resolution require heavy GPU computation and support for diverse raw image formats, which is difficult to scale and deploy as a standard web service.",
+    solution:
+      "Engineered a scalable cloud infrastructure using Modal and FastAPI to deploy Real-ESRGAN and Reti-Diff models, enabling up to 4x super-resolution and contrast correction on high-end NVIDIA GPUs with support for RAW and HEIC formats.",
     metrics: ["Up to 4x super-resolution"],
     capabilities: [
       "JPG, PNG, RAW, ARW, CR2, DNG, HEIC support",
